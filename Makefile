@@ -55,9 +55,17 @@ apply: ## Apply in the terraform folder
 	$(call info_colors,green,👏 Terraform Apply)
 	@cd $(DIR_GIT)/terraform && terraform init && terraform apply
 
+##@ Version
 
+dry-run: ## Dry run the version
+	$(call info_colors,green,👏 Generate Version Dry Run)
+	@npm run dry-run
+
+version: ## Generate the version
+	$(call info_colors,green,👏 Generate Version)
+	@npm run version
 
 include $(DIR_GIT)/prettier.mk
 
 
-.PHONY: docs precommit commit force plan apply checkov cz
+.PHONY: docs precommit commit force plan apply checkov cz dry-run version

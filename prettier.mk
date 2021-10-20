@@ -18,6 +18,8 @@ install_prerequesites: ## Install all the necessary tools
 	@brew install terraform-docs
 	$(call info_colors,red,👏 Installing Helm Docs)
 	brew install norwoodj/tap/helm-docs
+	$(call info_colors,purple,👏 Installing Standard-Version)
+	npm install -g standard-version
 
 
 

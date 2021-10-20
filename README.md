@@ -23,6 +23,8 @@ The available commands are:
 - `make commit`: runs `docs`, `precommit` and `git cz`
 - `make plan`: Runs `terraform plan`
 - `make apply`: Runs `terraform apply`
+- `make dry-run`: Tells you what the changelog will be
+- `make version`: Generate a new version based on the commits
 - `make install_prerequesites`: Installs the prerequesites for the project
 - `make colors`: Prints all the colors available in makefile
 
